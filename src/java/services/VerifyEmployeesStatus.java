@@ -31,14 +31,14 @@ public class VerifyEmployeesStatus {
         
         test1.setComment("No problem");
         test1.setName("Test 1");
-        test1.setStatus("PASS");
+        test1.setStatus(VerifyEmployeesStatusResponseDto.Status.PASS);
         
         VerifyEmployeesStatusResponseDto.TestResultDto test2 = 
                 new VerifyEmployeesStatusResponseDto.TestResultDto();
         
         test2.setComment("Bad guy");
         test2.setName("Test 2");
-        test2.setStatus("FAIL");
+        test2.setStatus(VerifyEmployeesStatusResponseDto.Status.FAIL);
         
         tests.add(test1);
         tests.add(test2);

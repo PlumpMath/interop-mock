@@ -4,9 +4,13 @@ import java.io.Serializable;
 import java.util.List;
 
 public class VerifyEmployeesStatusResponseDto implements Serializable {
+    public static enum Status {
+        PASS, FAIL, PENDING
+    }
+    
     public static class TestResultDto {
         private String name;
-        private String status;
+        private Status status;
         private String comment;
 
         public String getName() {
@@ -17,11 +21,11 @@ public class VerifyEmployeesStatusResponseDto implements Serializable {
             this.name = name;
         }
 
-        public String getStatus() {
+        public Status getStatus() {
             return status;
         }
 
-        public void setStatus(String status) {
+        public void setStatus(Status status) {
             this.status = status;
         }
 
