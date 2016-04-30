@@ -8,7 +8,7 @@ import javax.jws.WebService;
 import javax.jws.WebMethod;
 import javax.jws.WebParam;
 
-@WebService(serviceName = "VerifyEmployeeStatus")
+@WebService(serviceName = "VerifyEmployeesStatus")
 public class VerifyEmployeesStatus {
     @WebMethod(operationName = "verifyEmployees")
     public VerifyEmployeesStatusResponseDto verifyEmployees(
