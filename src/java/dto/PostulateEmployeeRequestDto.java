@@ -1,8 +1,9 @@
 package dto;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class PostulateEmployeeRequestDto {
+public class PostulateEmployeeRequestDto implements Serializable {
     public static enum Gender {
         MALE, FEMALE
     }
@@ -59,6 +60,24 @@ public class PostulateEmployeeRequestDto {
     
     private Employee employee;
     private List<String> features;
+    private String userName;
+    private String password;
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
     
     public Employee getEmployee() {
         return employee;

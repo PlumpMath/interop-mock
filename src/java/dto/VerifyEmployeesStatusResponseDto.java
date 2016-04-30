@@ -1,8 +1,9 @@
 package dto;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class VerifyEmployeesStatusResponseDto {
+public class VerifyEmployeesStatusResponseDto implements Serializable {
     public static class TestResultDto {
         private String name;
         private String status;

@@ -1,6 +1,8 @@
 package dto;
 
-public class PostulateEmployeeResponseDto {
+import java.io.Serializable;
+
+public class PostulateEmployeeResponseDto implements Serializable {
     private boolean success;
     private String errorMessage;
 
